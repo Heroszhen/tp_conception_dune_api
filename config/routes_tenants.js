@@ -168,5 +168,4 @@ router.delete("/tenant/:id", (req, res) => {
 
 
 
-
 module.exports = router;

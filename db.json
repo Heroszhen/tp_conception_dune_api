@@ -13,6 +13,13 @@
             "loyer": "112.5",
             "price": "1156000",
             "locataire": 2
+        },
+        {
+            "id": 3,
+            "address": "1213 rue d'Allemagne",
+            "loyer": "1512.5",
+            "price": "16000",
+            "locataire": 1
         }
     ],
     "tenants": [
