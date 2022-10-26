@@ -3,7 +3,8 @@ const app = express();
 const fs = require('fs');
 let db = fs.readFileSync('db.json');
 db = JSON.parse(db);
-console.log(db);
+let allgoods = db["goods"];
+let alltenants = db["tenants"];
 const port = 3210;/*
 const routesg = require('./config/routes_goods.js');
 const routest = require('./config/routes_tenants.js');
