@@ -1,0 +1,32 @@
+{
+    "goods": [
+        {
+            "id": 1,
+            "address": "23 rue de chapon",
+            "rent": "12.5",
+            "price": "56000",
+            "locataire": 1
+        },
+        {
+            "id": 2,
+            "address": "213 rue de France",
+            "loyer": "112.5",
+            "price": "1156000",
+            "locataire": 2
+        }
+    ],
+    "tenants": [
+        {
+            "id": 1,
+            "name": "Roger Federer",
+            "profession": "joueur de tennis",
+            "salary": "1632.3"
+        },
+        {
+            "id": 2,
+            "name": "Maria Sharapova",
+            "profession": "joueuse de tennis",
+            "salary": "6632.3"
+        }
+    ]
+}
