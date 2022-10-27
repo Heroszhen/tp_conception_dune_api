@@ -58,6 +58,37 @@ router.get("/tenants", (req, res) => {
 
 /**
  * @swagger
+ * /api/tenants/tenant{id}:
+ *   get:
+ *     summary: Get the tenant by id
+ *     tags: [Tenants]
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         schema:
+ *           type: string
+ *         required: true
+ *         description: The tenant id
+ *     responses:
+ *       200:
+ *         description: The tenant description by id
+ *         contens:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/Tenant'
+ *       404:
+ *         description: The Tenant was not found
+ */
+router.get("/task/:id", (req, res) => {
+    for (let entry of req.app.locals.alltenants) {
+        if (entry.id == req.params.id) res.send(entry);
+    }
+
+    res.sendStatus(404)
+});
+
+/**
+ * @swagger
  * /api/tenants/tenant:
  *   post:
  *     description: Create one tenant
