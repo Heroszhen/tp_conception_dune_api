@@ -58,7 +58,7 @@ router.get("/tenants", (req, res) => {
 
 /**
  * @swagger
- * /api/tenants/tenant{id}:
+ * /api/tenants/tenant/{id}:
  *   get:
  *     summary: Get the tenant by id
  *     tags: [Tenants]
@@ -79,7 +79,7 @@ router.get("/tenants", (req, res) => {
  *       404:
  *         description: The Tenant was not found
  */
-router.get("/task/:id", (req, res) => {
+router.get("/tenant/:id", (req, res) => {
     for (let entry of req.app.locals.alltenants) {
         if (entry.id == req.params.id) res.send(entry);
     }
