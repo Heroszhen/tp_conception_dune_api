@@ -13,3 +13,8 @@
 
 ### les fonctions utilisées avec APIDOC
 1. config/routes_tenants.js
+- Récupérer tous les locataires, get : /api/tenants/tenants
+- Récupérer un locataire, get : /api/tenants/tenant/{id}
+- Ajouter un locataire, post : /api/tenants/tenant
+- Modifier un locataire, put : /api/tenants/tenant/{id}
+- Supprimer un loacataire, delete : /api/tenants/tenant/{id}
